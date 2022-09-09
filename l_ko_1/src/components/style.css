@@ -1,0 +1,90 @@
+.study-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.cards {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 50px;
+    width: 0;
+    background-color: rgb(255, 163, 163);
+}
+
+.card {
+    position: absolute;
+    bottom: 0;
+    width: 240px;
+    height: 320px;
+    left: -120px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--seco);
+    transition: transform .4s, transform 0s;
+    border: 2px solid var(--thir);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.card p {
+    transition-duration: .2s;
+    user-select: none;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    pointer-events: none;
+}
+
+.verso {
+    transform: rotateY(180deg); 
+}
+
+.verso p {
+    transform: rotateY(180deg); 
+}
+
+.actual-card {
+    position: relative;
+    /* padding: 20px 50px; */
+    width: 240px;
+    height: 320px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actual-card .card {
+    left: 0;
+    top: 0;
+}
+
+
+.green, .red {
+    width: 55px;
+    height: 320px;
+    position: absolute;
+    bottom: calc(50%);
+    transform: translateY(50%);
+    box-sizing: border-box;
+    background-color: var(--seco);
+    border: 2px solid var(--thir);
+}
+
+.green {
+    left: -5px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+.red {
+    right: -5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}

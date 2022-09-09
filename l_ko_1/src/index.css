@@ -1,0 +1,21 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;;
+
+  --seco: rgb(154, 248, 177);
+  --thir: #111;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(var(--seco), var(--thir));
+  height: 100vh;
+  overflow: hidden;
+}
+
+#root, .App {
+  height: 100%;
+}
